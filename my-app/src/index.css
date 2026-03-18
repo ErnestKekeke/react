@@ -1,0 +1,25 @@
+*, *::before, *::after{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.on{
+  background-color: green;
+  color: white;
+  padding: 10px;
+}
+
+.off{
+  background-color: red;
+  color: white;
+  padding: 10px;
+}
+
+
+.box-div{
+   border: 2px solid black;
+   width: fit-content;
+   padding: 50px;
+}
