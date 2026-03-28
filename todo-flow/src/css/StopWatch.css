@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Syne:wght@700;800&display=swap');
+
+.sw-root {
+  display: inline-block;
+  font-family: 'Share Tech Mono', monospace;
+  padding: 2rem;
+}
+
+.sw-card {
+  background: #0d0d0d;
+  border: 1px solid #222;
+  border-radius: 3px;
+  padding: 2.5rem 3rem;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 0 40px rgba(0, 255, 180, 0.06), 4px 4px 0 #00ffb4;
+}
+
+.sw-card::before {
+  content: 'STOPWATCH.EXE';
+  position: absolute;
+  top: -11px;
+  left: 20px;
+  background: #00ffb4;
+  color: #0d0d0d;
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  padding: 1px 8px;
+}
+
+.sw-display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  margin-bottom: 2rem;
+}
+
+.sw-segment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sw-digits {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 3.5rem;
+  color: #e8fff8;
+  letter-spacing: 0.05em;
+  line-height: 1;
+  text-shadow: 0 0 20px rgba(0, 255, 180, 0.4);
+}
+
+.sw-digits.ms {
+  font-size: 2rem;
+  color: #00ffb4;
+  text-shadow: 0 0 12px rgba(0, 255, 180, 0.6);
+}
+
+.sw-label {
+  font-size: 0.5rem;
+  color: #444;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-top: 4px;
+}
+
+.sw-colon {
+  font-size: 3rem;
+  color: #00ffb4;
+  line-height: 1;
+  padding-bottom: 0.5rem;
+  opacity: 0.6;
+  align-self: center;
+  margin: 0 2px;
+}
+
+.sw-controls {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.sw-btn {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 0.55rem 1.2rem;
+  border: 1px solid;
+  border-radius: 1px;
+  cursor: pointer;
+  background: transparent;
+  transition: all 0.12s;
+}
+
+.sw-btn.play {
+  color: #00ffb4;
+  border-color: #00ffb433;
+}
+.sw-btn.play:hover {
+  background: #00ffb4;
+  color: #0d0d0d;
+  border-color: #00ffb4;
+  box-shadow: 0 0 14px rgba(0, 255, 180, 0.35);
+}
+
+.sw-btn.pause {
+  color: #ffd166;
+  border-color: #ffd16633;
+}
+.sw-btn.pause:hover {
+  background: #ffd166;
+  color: #0d0d0d;
+  border-color: #ffd166;
+  box-shadow: 0 0 14px rgba(255, 209, 102, 0.3);
+}
+
+.sw-btn.reset {
+  color: #ff5f5f;
+  border-color: #ff5f5f33;
+}
+.sw-btn.reset:hover {
+  background: #ff5f5f;
+  color: #0d0d0d;
+  border-color: #ff5f5f;
+  box-shadow: 0 0 14px rgba(255, 95, 95, 0.3);
+}
+
+.sw-btn:active { transform: scale(0.96); }

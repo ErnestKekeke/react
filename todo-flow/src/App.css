@@ -1,0 +1,7 @@
+*, *::before, *::after{
+  text-decoration: none;
+}
+
+body{
+  color: rgb(204, 248, 248);
+}
